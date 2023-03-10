@@ -14,8 +14,6 @@
 // MILESTONE 2
 const gridElem = document.querySelector(".grid");
 for (let i = 1; i <= 100; i++) {
-    let fizzBuzz;
-    let classColor;
     if (i % 15 === 0) {
         fizzBuzz = "fizzBuzz";
         classColor = "fizzbuzz";
@@ -32,9 +30,4 @@ for (let i = 1; i <= 100; i++) {
     console.log(i, fizzBuzz);
     gridElem.innerHTML += `<div class="box ${classColor}">${i}</div>`;
 }
-
-
-
-
-
 
