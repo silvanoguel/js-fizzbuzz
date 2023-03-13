@@ -6,19 +6,22 @@
 
 body {
     background-color: lightgray;
-    font-family: 'Tilt Prism', cursive;
 }
 
-.grid {
+.container {
+    margin-top: 20px;
     width: 1000px;
-    margin: 0 auto;
+    margin: 20px auto;
+    /* background-color: aqua; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 5px;
 }
 
 .box {
-    width: calc(100% / 10 - 4px);
-    height: 100px;
+    width: 150px;
+    height: 150px;
     color: white;
     border: 2px solid black;
     margin: 5px;
@@ -26,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2.4rem;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
 .fizz {

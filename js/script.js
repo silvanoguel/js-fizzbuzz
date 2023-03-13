@@ -12,22 +12,28 @@
 
 
 // MILESTONE 2
-const gridElem = document.querySelector(".grid");
+let containerElem = document.querySelector(".container");
 for (let i = 1; i <= 100; i++) {
+    let boxText;
+    let boxClass;
     if (i % 15 === 0) {
-        fizzBuzz = "fizzBuzz";
-        classColor = "fizzbuzz";
+        console.log(i, "FizzBuzz");
+        boxText = "FizzBuzz";
+        boxClass = "fizzbuzz";
     }   else if (i % 3 === 0) {
-        fizzBuzz = "fizz";
-        classColor = "fizz";
+        console.log(i, "Fizz");
+        boxText = "Fizz";
+        boxClass = "fizz";
     }   else if (i % 5 === 0) {
-        fizzBuzz = "buzz";
-        classColor = "buzz";
+        console.log(i, "Buzz");
+        boxText = "Buzz";
+        boxClass = "buzz";
     }  else {
-        fizzBuzz = "buzz";
-        classColor = "other";
+        console.log(i);
+        boxText = i;
+        boxClass = "other";
     }
-    console.log(i, fizzBuzz);
-    gridElem.innerHTML += `<div class="box ${classColor}">${i}</div>`;
+
+    containerElem.innerHTML += `<div class="box ${boxClass}">${boxText}</div>`;
 }
 
